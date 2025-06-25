@@ -1,0 +1,223 @@
+/* ------------------------about class Div's--------------------------- */
+.about{
+  display : flex ;
+  flex-direction : column ; 
+  align-items: center ;
+}
+.about-sections{
+  display: flex ;
+  padding: 10px 10% ;
+  gap : 5% ; 
+  max-width: 100% ;
+}
+.about-left img{
+  width: 100% ;
+  border-bottom-left-radius: 50% ;
+  border-top-right-radius: 5% ;
+  border: 1px solid red ;
+  box-shadow: 5px 5px 10px rgba(184, 16, 16,1.5);
+}
+.about-right p{
+  line-height: 2em ;
+}
+.about-left{
+  flex-basis: 35% ;
+}
+.about-right{
+  flex-basis: 60% ;
+  max-width: 100% ;
+}
+.about-title{
+  margin-bottom: em ;
+   background : linear-gradient(to right, orange , red );
+  background-clip: text ;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent ;
+  font-size : 2em ; 
+
+}
+/* -----------------------------------------SKill-set div------------------------------------------------------------------- */
+.Skill-set button.active{
+  border-color : orange; 
+  color : orange ; 
+}
+
+.Skill-set{
+  margin-top: 2em;
+  display: flex ;
+  flex-wrap: wrap ;
+  gap: 2em ;
+  max-width: 100% ;
+}
+.Skill-set button{
+  padding: 10px 30px ;
+  border-radius: 20px  ;
+  border : 2px solid white  ; 
+  background-color: black ;
+  color : white ; 
+  font-family: 'Jost';
+  cursor: pointer;
+  transition : 0.5s ; 
+  max-width: 100% ;
+  white-space: nowrap ;
+}
+.Skill-set button:hover{
+  transform: scale(1.02) ;
+  border-color : orange; 
+  color : orange ; 
+}
+.skill{
+  display : flex ; 
+  align-items : center ; 
+  gap : 1em  ;
+  transition : 0.3s ;  
+  max-width: 100% ; 
+}
+.skill:hover{
+  transform : scale(1.02) ;
+}
+/* -----------------------------------------result's div----------------------------------------- */
+.result{
+  margin-top: 0.3em ;
+  max-width: 100% ;
+}
+.result h3{
+  min-width: 150px ; 
+}
+/* ----------------------------------------Skills Designs---------------------------------------- */
+.Core{
+  line-height:3.5rem ;
+}
+.c-line , .p-line , .j-line , .h-line , .js-line , .react-line , .cs-line{
+  height: 3px ;
+  border : none ;
+  border-radius: 25px ; 
+}
+.web{
+ line-height: 3em ;
+}
+.edu{
+  line-height: 2.5em;
+}
+.c-line{
+  width: 80% ;
+  background-color: orange ;
+}
+.p-line{
+  width: 70%;
+  background-color: orange ;
+}
+.j-line{
+   width: 80%;
+  background-color: orange ;
+}
+.h-line{
+  width: 90% ;
+  background-color: orange ;
+}
+.cs-line{
+  width: 90%;
+  background-color: orange;
+}
+.js-line{
+  width: 70% ;
+  background-color: orange ;
+}
+.react-line{
+  width: 69%  ;
+  background-color: orange ;
+}
+.edu p{
+  color : orange 
+}
+/* -------------------------------------------------AChievements----------------------------------------- */
+.acheived{
+  display : flex ; 
+  justify-content: space-around;
+  min-width: 100% ;
+  margin-bottom: 2em ;
+  margin-top: 2.5em ;
+}
+.acheive{
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+}
+.acheive h1{
+  background: linear-gradient(to right , orange , red );
+  background-clip: text ;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent ;
+  font-size: 2em ;
+}
+/* ----------------------------------------responsive Css (upcoming)------------------------------------------ */
+@media (max-width : 800px){
+  .about{
+  gap : 20px ; 
+  align-items: start ;
+  padding : 10px 10% ; 
+}
+.about-title{
+  font-size : 2em ;
+  padding : 0 ;
+}
+.about-left{
+  display : none ; 
+}
+.about-sections{
+  display: flex ;
+  flex-wrap: wrap ;
+  max-width: 100% ;
+  box-sizing: border-box;
+  flex-direction: column; 
+  padding : 0 ; 
+}
+.about-right p{
+  text-align: justify ;
+  font-size: 15px ;
+  line-height: 1.5em ;
+  word-spacing: 1px ;
+}
+.Skill-set{
+ gap : 5px ; 
+}
+.Skill-set button{
+  padding: 10px 12px ;
+  border-radius: 20px  ;
+  border : 2px solid white  ; 
+  background-color: black ;
+  color : white ; 
+  font-family: 'Jost';
+  font-size: 11px ;
+  cursor: pointer;
+  transition : 0.5s ; 
+}
+ .skill  h3{
+ font-size: 15px ;
+ min-width: 50px ;
+}
+.skill .h-line{
+  width: 80% ;
+}
+.skill .react-line{
+  margin-left: 14px ;
+}
+.acheived{
+  display : flex ; 
+  min-width: 100% ;
+  margin-top: 2.5em ;
+}
+.acheive h1{
+  font-size: 1.2em ;
+}
+.acheive{
+  display: flex ;
+  flex-direction: column ;
+  align-items : start   ;
+}
+.acheive p{
+  font-size: 10px ;
+  width: 100% ;
+}
+
+}

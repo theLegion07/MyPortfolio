@@ -1,0 +1,47 @@
+.projects-container{
+  padding : 10px 8% ;
+}
+.works-grid{
+  display: flex ;
+  flex-wrap: wrap ;
+  justify-content: center ;
+  gap : 20px ; 
+  
+}
+.work-wrapper{
+  overflow-x: unset;
+  padding: 0 ;
+}
+.works-card{
+  height: 250px ; 
+  width: 300px ;
+  border: white 2px solid ;
+  border-radius: 10px ;
+  padding: 20px;
+   transition: all 0.3s ease, box-shadow 0.3s ease;
+  background : transparent ; 
+}
+.works-card:hover{
+  transform: translateY(-5px );
+   box-shadow: 0 10px 20px rgba(219, 5, 5, 0.844);
+  border: 2px solid  rgba(219, 5, 5, 0.844);
+  color : orange ; 
+}
+
+/* ------------------------------------------responsive Design------------------------------------------ */
+.works-grid{
+  flex-wrap: nowrap;
+    overflow-x: auto ;
+    padding: 10px 0 ;
+    margin-bottom: 0 ;
+    width: max-content;
+    scroll-behavior: smooth ;
+}
+.work-wrapper{
+  overflow-x: auto ;
+  padding: 10px 2% ;
+  -webkit-overflow-scrolling: touch ;
+}
+.works-card{
+  flex: 0 0 auto ;
+}

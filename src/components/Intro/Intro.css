@@ -1,0 +1,162 @@
+.intro{
+  display: flex ;
+  align-items: center ;
+  margin-top: 70px ; 
+  padding : 10px 10% ; 
+  margin-bottom: 100px ;
+  height : 70vh ; 
+}
+.div-left{
+  display : flex ; 
+  flex-direction: column;
+  align-items: center ;
+  flex-basis: 65%;
+
+}
+.div-right{
+  flex-basis: 35%;
+}
+.insta , .x-twitter , .git-hub , .linked-in{
+  height : 30px ; 
+  transition : 0.3s ; 
+  cursor : pointer ; 
+}
+.insta:hover , .x-twitter:hover , .git-hub:hover , .linked-in:hover{
+  transform : scale(1.04)
+}
+.social-icons{
+  display : flex ;
+  justify-content: center;
+  max-width: 100% ;
+  width: 100%; 
+  gap : 10px ;
+  margin-top : 5px ; 
+  margin-bottom : 5px ; 
+}
+.Profile{
+  height : 300px   ;
+  border-radius: 50%  ; 
+  border: solid orange  ;
+  /* box-shadow: 6px 1px 10px rgba(255, 213, 0, 1) , -6px -1px 10px rgba(255, 213, 0, 1); */
+}
+.intro h1{
+  text-align: center;
+  width: 100% ;
+  font-size: 50px ;
+}
+
+.intro h1 span{
+  background : linear-gradient(to right, orange , red );
+  background-clip: text ;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent ;
+}
+.intro p{
+  text-align: center ;
+  font-size: 24px ;
+  line-height: 40px ;
+}
+.intro-buttons{
+  margin-top : 10px ;
+  display: flex ;
+  align-items: center;
+  gap : 25px ;
+  font-size: 24px ;
+  font-weight: 500;
+  margin-bottom: 50px ;
+}
+.intro-connect{
+  cursor: pointer;
+  background: linear-gradient(to right, #ffffff, #f5af19);
+  padding: 10px 50px ;
+  border-radius: 50px ;
+  display : flex ;
+  flex-wrap : wrap ; 
+  color  :white  ; 
+  max-width : 100% ; 
+  background: linear-gradient(to right, orange , red );
+  transition: transform 0.15s ease-in-out;
+}
+.intro-connect a{
+  text-decoration : none ; 
+  color : white ; 
+}
+.intro-connect:hover{
+    transform: scale(1.05); 
+ }
+.intro-resume{
+  display: flex ;
+  max-width: 100% ;
+  flex-wrap: wrap ;
+  padding: 10px 44px ;
+  border : 2px solid white ; 
+  cursor: pointer;
+  border-radius: 50px ;
+}
+
+.intro-resume:hover{
+
+  border-color : orange;
+}
+
+/* ------------------responsive design-------------- */
+@media (max-width : 800px){
+  body , html{
+           width  :100% ; 
+           margin : 0 ; 
+           padding : 0 ;
+           overflow-x : hidden ; 
+           box-sizing: border-box ;
+  }
+  .intro{
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  margin-top: 100px ; 
+  margin-bottom: 120px  ;
+
+}
+.intro h1{
+  text-align: center;
+  width: 100% ;
+  font-size: 20px ;
+}
+.intro h1 span{
+  font-size: 25px ;
+}
+.insta , .x-twitter , .git-hub , .linked-in{
+  height : 25px ; 
+  transition : 0.3s ; 
+  cursor : pointer ; 
+}
+.Profile{
+  height : 250px   ;
+  border-radius: 50%  ; 
+  border: solid orange  ;
+  /* box-shadow: 6px 1px 10px rgba(255, 213, 0, 1) , -6px -1px 10px rgba(255, 213, 0, 1); */
+}
+.intro p{
+  text-align: center ;
+  font-size: 15px ;
+}
+.intro-connect{
+  cursor: pointer;
+  background: linear-gradient(to right, #ffffff, #f5af19);
+   padding: 10px 20px ;
+  border-radius: 50px ;
+  color  :white  ; 
+  background: linear-gradient(to right, orange , red );
+  transition: transform 0.15s ease-in-out;
+}
+.intro-connect a{
+  font-size: 13px ;
+}
+.intro-resume{
+  font-size: 13px ;
+  padding: 10px 20px ;
+  border : 2px solid white ; 
+  cursor: pointer;
+  border-radius: 50px ;
+}
+
+}

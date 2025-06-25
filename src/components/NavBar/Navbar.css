@@ -1,0 +1,113 @@
+:root{
+  background-color: black ;
+}
+.Navi{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center ;
+  margin : 20px 170px ; 
+  /* padding : 10px 10% ;
+  margin-top : 10px ;  */
+}
+.cross{
+  height : 30px ; 
+}
+.hamb{
+  height : 30px ; 
+}
+.Navi  h2 a{
+  color: white ;
+  cursor : pointer ;  
+  text-decoration: none ;
+  transition: all 0.3s ease-in-out;
+}
+.Navi  h2 a:hover{
+  color: red ;
+}
+.navi-menu li a{
+  color : white ; 
+  text-decoration: none ;
+  position: relative;
+}
+.navi-menu li a:active{
+  color : orange ; 
+}
+.navi-menu li a:after{
+  content :  " " ;
+  height: 2px ;
+  position: absolute;
+  width: 0% ;
+  left : 0 ; 
+  bottom: -6px;
+  background : linear-gradient(to right , orange , red ) ;
+  transition: width 0.3s ease-in-out;
+}
+
+.navi-menu li a:hover:after{
+  width: 100% ;
+}
+.navi-menu{
+  display: flex ;
+  align-items: center;
+  list-style: none ;
+  gap : 60px ; 
+  font-size : 20px ; 
+  color : white ; 
+}
+.cross{
+  display: none ;
+}
+.hamb{
+  display: none ;
+}
+/* -------------------------------------------------responsive design--------------------------------------------- */
+@media(max-width : 800px){
+  .Navi{
+    margin: 20px  50px ;
+  }
+  .header{
+    position: fixed ;
+    top :  0 ;
+    right: 0 ;
+    left : 0 ;
+    height: 6%  ;
+    width: 100% ;
+    z-index: 5 ;
+    background-color: black;
+  }
+  .hamb{
+    display: block ;
+    position: fixed ;
+    top : 2%  ;
+    right: 30px ;
+  }
+  .cross{
+    display: block;
+    position: relative;
+    top: 30px ;
+    left : 150px ; 
+    width: 30px ;
+  }
+   .Navi h2 {
+     padding: 3% 10% ;
+   }
+  .navi-menu{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top : 0 ;
+    gap : 30px ; 
+    width: 200px ;
+    background-color: black ;
+    height: 100% ;
+    z-index: 7;
+    transition:  right 0.5s;
+    right: -350px ;
+  }
+  .navi-menu li{
+    font-size: 20px ;
+    padding-left: 30px  ;
+    flex-direction: row ;
+    gap : 20px ;
+  }
+}
