@@ -7,3 +7,20 @@ body{
   color : white ; 
   font-family: 'Jost';
 }
+/* For the whole page */
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent ;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: red ;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
