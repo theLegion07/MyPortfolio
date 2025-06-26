@@ -5,7 +5,7 @@
   display: flex ;
   flex-wrap: wrap ;
   justify-content: center ;
-  gap : 20px ; 
+  gap : 20px ;  
   
 }
 .work-wrapper{
@@ -29,6 +29,7 @@
 }
 
 /* ------------------------------------------responsive Design------------------------------------------ */
+@media (max-width : 800px ){
 .works-grid{
   flex-wrap: nowrap;
     overflow-x: auto ;
@@ -44,4 +45,5 @@
 }
 .works-card{
   flex: 0 0 auto ;
+}
 }
