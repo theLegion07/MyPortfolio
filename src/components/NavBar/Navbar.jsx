@@ -19,10 +19,10 @@ const Navbar = () => {
       </div>
       <ul ref = {menubar}className="navi-menu">
       <img src={cross} alt="cross" onClick = {cros}className='cross' />
-      <li><AnchorLink href = "#About" offset={70}> About</AnchorLink></li> 
-      <li> <AnchorLink href = "#cont" offset={70}>Contact</AnchorLink></li>
-      <li><AnchorLink href = "#Serv" offset={70}>Services</AnchorLink></li> 
-      <li><AnchorLink href = "#pro" offset={70}>Projects</AnchorLink></li> 
+      <li><AnchorLink href = "#About" offset={70} onClick={cros}> About</AnchorLink></li> 
+      <li> <AnchorLink href = "#cont" offset={70} onClick={cros}>Contact</AnchorLink></li>
+      <li><AnchorLink href = "#Serv" offset={70} onClick={cros}>Services</AnchorLink></li> 
+      <li><AnchorLink href = "#pro" offset={70}onClick={cros}>Projects</AnchorLink></li> 
       </ul>
     </div>
   )
